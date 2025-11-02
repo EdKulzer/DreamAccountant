@@ -19,7 +19,6 @@
             overflow-x: hidden;
         }
 
-        /* Header */
         .header {
             text-align: center;
             padding: 60px 20px 40px;
@@ -51,7 +50,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-shadow: 0 0 40px rgba(78, 226, 236, 0.3);
         }
 
         .tagline {
@@ -69,7 +67,6 @@
             color: #9CA3AF;
         }
 
-        /* Navigation */
         .navigation {
             max-width: 1200px;
             margin: 0 auto 60px;
@@ -102,7 +99,6 @@
             box-shadow: 0 10px 30px rgba(78, 226, 236, 0.3);
         }
 
-        /* Screen Sections */
         .screen-section {
             max-width: 1400px;
             margin: 0 auto 100px;
@@ -166,14 +162,12 @@
                 0 0 60px rgba(78, 226, 236, 0.4);
         }
 
-        /* Special styling for splash screen */
         .splash-screen .screen-image {
             box-shadow: 
                 0 20px 60px rgba(0, 0, 0, 0.5),
                 0 0 60px rgba(78, 226, 236, 0.4);
         }
 
-        /* Footer */
         .footer {
             text-align: center;
             padding: 60px 20px;
@@ -199,41 +193,19 @@
             font-style: italic;
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
-            .title {
-                font-size: 2.5rem;
-            }
-
-            .tagline {
-                font-size: 1.2rem;
-            }
-
-            .screen-title {
-                font-size: 2rem;
-            }
-
-            .nav-grid {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            }
-
-            .screen-image {
-                max-width: 100%;
-            }
+            .title { font-size: 2.5rem; }
+            .tagline { font-size: 1.2rem; }
+            .screen-title { font-size: 2rem; }
+            .nav-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+            .screen-image { max-width: 100%; }
         }
 
-        /* Smooth scroll */
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
-        /* Section dividers */
         .section-divider {
             height: 1px;
-            background: linear-gradient(90deg, 
-                transparent 0%, 
-                rgba(78, 226, 236, 0.3) 50%, 
-                transparent 100%);
+            background: linear-gradient(90deg, transparent 0%, rgba(78, 226, 236, 0.3) 50%, transparent 100%);
             margin: 80px auto;
             max-width: 600px;
         }
@@ -241,21 +213,19 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="header">
         <div class="logo-container">
-            <img src="logo.png" alt="Dream Accountant Logo" class="logo">
+            <img src="Locked_logo.png" alt="Dream Accountant Logo" class="logo">
         </div>
         <h1 class="title">DREAM ACCOUNTANT</h1>
         <p class="tagline">Pay your dreams what they're worth.</p>
         <p class="description">
             Transform goal-setting into an emotional, cinematic experience. Dream Accountant uses 
             metaphorical accounting—Dream Debt and Dream Credits—to make you emotionally accountable 
-            for pursuing your ambitions. A complete product showcase featuring 21 professionally designed screens.
+            for pursuing your ambitions. Complete product showcase with 21 screens.
         </p>
     </header>
 
-    <!-- Navigation -->
     <nav class="navigation">
         <div class="nav-grid">
             <a href="#screen-00" class="nav-button">00 • Splash</a>
@@ -281,14 +251,11 @@
         </div>
     </nav>
 
-    <!-- Screen 00: Splash -->
     <section id="screen-00" class="screen-section splash-screen">
         <div class="screen-header">
             <span class="screen-number">SCREEN 00</span>
             <h2 class="screen-title">Splash Screen</h2>
-            <p class="screen-description">
-                Welcome moment featuring the Dream Accountant brand identity and tagline.
-            </p>
+            <p class="screen-description">Welcome moment featuring the Dream Accountant brand identity and tagline.</p>
         </div>
         <div class="screen-container">
             <img src="00_splash_v03.png" alt="Splash Screen" class="screen-image">
@@ -297,30 +264,24 @@
 
     <div class="section-divider"></div>
 
-    <!-- Screen 01: The Ledger - Home -->
     <section id="screen-01" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 01</span>
             <h2 class="screen-title">The Ledger — Home</h2>
-            <p class="screen-description">
-                Main dashboard displaying current Dream Currency, active goals, and today's checkpoint with reward tracking.
-            </p>
+            <p class="screen-description">Main dashboard with Dream Currency, active goals, and today's checkpoint.</p>
         </div>
         <div class="screen-container">
-            <img src="01_The_Ledger_-_Home_v02.png" alt="The Ledger - Home" class="screen-image">
+            <img src="01_The_Ledger_-_Home_v02.png" alt="The Ledger" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 02: Emotional Ledger -->
     <section id="screen-02" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 02</span>
             <h2 class="screen-title">Emotional Ledger</h2>
-            <p class="screen-description">
-                Net emotional position index and goal accountability overview showing debt reduction progress across multiple dreams.
-            </p>
+            <p class="screen-description">Net emotional position and goal accountability overview.</p>
         </div>
         <div class="screen-container">
             <img src="02_Emotional_Ledger.png" alt="Emotional Ledger" class="screen-image">
@@ -329,46 +290,37 @@
 
     <div class="section-divider"></div>
 
-    <!-- Screen 03: Cost/Debt Flow & Insights -->
     <section id="screen-03" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 03</span>
             <h2 class="screen-title">Insights Dashboard</h2>
-            <p class="screen-description">
-                Weekly trends, interest savings opportunities, optimal timing insights, and personalized coaching for top blockers.
-            </p>
+            <p class="screen-description">Weekly trends, savings opportunities, and coaching.</p>
         </div>
         <div class="screen-container">
-            <img src="03_Cost_Debt_Flow_v02.png" alt="Cost Debt Flow" class="screen-image">
+            <img src="03_Cost_Debt_Flow_v02.png" alt="Insights" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 04: Onboarding Welcome -->
     <section id="screen-04" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 04</span>
             <h2 class="screen-title">Onboarding — Welcome</h2>
-            <p class="screen-description">
-                First-time user introduction explaining Dream Debt and Dream Credit concepts with call-to-action to begin.
-            </p>
+            <p class="screen-description">Introduction to Dream Debt and Dream Credit concepts.</p>
         </div>
         <div class="screen-container">
-            <img src="04_Onboarding_Welcome_v01.png" alt="Onboarding Welcome" class="screen-image">
+            <img src="04_Onboarding_Welcome_v01.png" alt="Welcome" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 05: Goal Composer -->
     <section id="screen-05" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 05</span>
             <h2 class="screen-title">Compose Audacious Goal</h2>
-            <p class="screen-description">
-                Create a new dream with title, rationale, timeline horizon, AI-suggested micro-actions, and estimated Dream Debt calculation.
-            </p>
+            <p class="screen-description">Create new dreams with AI-suggested micro-actions.</p>
         </div>
         <div class="screen-container">
             <img src="05_Goal_Composer_V01.png" alt="Goal Composer" class="screen-image">
@@ -377,14 +329,11 @@
 
     <div class="section-divider"></div>
 
-    <!-- Screen 06: Dream Intake -->
     <section id="screen-06" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 06</span>
-            <h2 class="screen-title">Dream Intake — The Question</h2>
-            <p class="screen-description">
-                Onboarding flow capturing initial dreams with desire and neglect metrics. What keeps calling you back?
-            </p>
+            <h2 class="screen-title">Dream Intake</h2>
+            <p class="screen-description">Capture initial dreams with desire metrics.</p>
         </div>
         <div class="screen-container">
             <img src="06_Onboarding_Dream_Intake_v01.png" alt="Dream Intake" class="screen-image">
@@ -393,14 +342,11 @@
 
     <div class="section-divider"></div>
 
-    <!-- Screen 07: Goal Detail -->
     <section id="screen-07" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 07</span>
             <h2 class="screen-title">Goal Detail</h2>
-            <p class="screen-description">
-                Expanded view of a specific dream showing debt reduction progress, focus timer, evidence uploads, and forecasting.
-            </p>
+            <p class="screen-description">Expanded dream view with progress and evidence.</p>
         </div>
         <div class="screen-container">
             <img src="07_Goal_Detail.png" alt="Goal Detail" class="screen-image">
@@ -409,94 +355,76 @@
 
     <div class="section-divider"></div>
 
-    <!-- Screen 08: Micro-Action Focus Mode -->
     <section id="screen-08" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 08</span>
-            <h2 class="screen-title">Micro-Action — Focus Mode</h2>
-            <p class="screen-description">
-                Distraction-free timer interface with reflection prompts and ambient soundscape options for deep work sessions.
-            </p>
+            <h2 class="screen-title">Focus Mode</h2>
+            <p class="screen-description">Distraction-free timer with reflection prompts.</p>
         </div>
         <div class="screen-container">
-            <img src="08_Micro_Action_Focus_Mode.png" alt="Micro-Action Focus Mode" class="screen-image">
+            <img src="08_Micro_Action_Focus_Mode.png" alt="Focus Mode" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 10: Reflection Journal -->
     <section id="screen-10" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 10</span>
             <h2 class="screen-title">Reflection Journal</h2>
-            <p class="screen-description">
-                Daily mood tracking and journaling with optional AI reframing suggestions and searchable entry history.
-            </p>
+            <p class="screen-description">Daily mood tracking with AI reframing.</p>
         </div>
         <div class="screen-container">
-            <img src="10_Reflection_Journal.png" alt="Reflection Journal" class="screen-image">
+            <img src="10_Reflection_Journal.png" alt="Journal" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 11: Credits Wallet -->
     <section id="screen-11" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 11</span>
             <h2 class="screen-title">Credits Wallet</h2>
-            <p class="screen-description">
-                Dream Credit balance display with milestone tracking and browsable rewards from partner organizations.
-            </p>
+            <p class="screen-description">Dream Credit balance and rewards.</p>
         </div>
         <div class="screen-container">
-            <img src="11_Credits_Wallet.png" alt="Credits Wallet" class="screen-image">
+            <img src="11_Credits_Wallet.png" alt="Wallet" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 12: Insights & Forecasting -->
     <section id="screen-12" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 12</span>
             <h2 class="screen-title">Insights & Forecasting</h2>
-            <p class="screen-description">
-                Advanced analytics showing credit trends, interest savings opportunities, optimal work times, and blocker identification with coaching.
-            </p>
+            <p class="screen-description">Advanced analytics and predictions.</p>
         </div>
         <div class="screen-container">
-            <img src="12_Insights_and_Forecasting.png" alt="Insights and Forecasting" class="screen-image">
+            <img src="12_Insights_and_Forecasting.png" alt="Forecasting" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 13: Community Circles -->
     <section id="screen-13" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 13</span>
             <h2 class="screen-title">Community Circles</h2>
-            <p class="screen-description">
-                Opt-in accountability groups with privacy-first metric sharing. Join communities of like-minded dreamers.
-            </p>
+            <p class="screen-description">Privacy-first accountability groups.</p>
         </div>
         <div class="screen-container">
-            <img src="13_Community_Circles.png" alt="Community Circles" class="screen-image">
+            <img src="13_Community_Circles.png" alt="Circles" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 14: Marketplace -->
     <section id="screen-14" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 14</span>
             <h2 class="screen-title">Marketplace</h2>
-            <p class="screen-description">
-                Redeem Dream Credits for partner resources including bookstores, online courses, and therapy sessions.
-            </p>
+            <p class="screen-description">Redeem credits for partner resources.</p>
         </div>
         <div class="screen-container">
             <img src="14_Marketplace.png" alt="Marketplace" class="screen-image">
@@ -505,46 +433,37 @@
 
     <div class="section-divider"></div>
 
-    <!-- Screen 15: Goals List View -->
     <section id="screen-15" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 15</span>
             <h2 class="screen-title">My Audacious Goals</h2>
-            <p class="screen-description">
-                Complete list view of all active dreams with debt progress, dedication time, and next action items.
-            </p>
+            <p class="screen-description">Complete list of all active dreams.</p>
         </div>
         <div class="screen-container">
-            <img src="15_Goals_List_View.png" alt="Goals List View" class="screen-image">
+            <img src="15_Goals_List_View.png" alt="Goals" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 16: Notifications / Inbox -->
     <section id="screen-16" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 16</span>
-            <h2 class="screen-title">Notifications / Inbox</h2>
-            <p class="screen-description">
-                Gentle milestone celebrations, personalized tips, and partner offers with customizable notification settings.
-            </p>
+            <h2 class="screen-title">Notifications</h2>
+            <p class="screen-description">Milestone celebrations and tips.</p>
         </div>
         <div class="screen-container">
-            <img src="16_Notifications_Inbox.png" alt="Notifications Inbox" class="screen-image">
+            <img src="16_Notifications_Inbox.png" alt="Inbox" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 17: Settings -->
     <section id="screen-17" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 17</span>
             <h2 class="screen-title">Settings</h2>
-            <p class="screen-description">
-                Privacy controls, theme customization, motion reduction options, and billing management.
-            </p>
+            <p class="screen-description">Privacy, theme, and preferences.</p>
         </div>
         <div class="screen-container">
             <img src="17_Settings.png" alt="Settings" class="screen-image">
@@ -553,55 +472,45 @@
 
     <div class="section-divider"></div>
 
-    <!-- Screen 18: Ethics & Data Transparency -->
     <section id="screen-18" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 18</span>
-            <h2 class="screen-title">Ethics & Data Transparency</h2>
-            <p class="screen-description">
-                Zero brokerage commitment, local encryption details, and explainable AI nudges. Your data belongs to you.
-            </p>
+            <h2 class="screen-title">Ethics & Transparency</h2>
+            <p class="screen-description">Data protection commitments.</p>
         </div>
         <div class="screen-container">
-            <img src="18_Ethics.png" alt="Ethics & Data Transparency" class="screen-image">
+            <img src="18_Ethics.png" alt="Ethics" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 19: Help & Support -->
     <section id="screen-19" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 19</span>
             <h2 class="screen-title">Help & Support</h2>
-            <p class="screen-description">
-                FAQ sections covering credits, privacy, and focus mode, plus contact options and optional diagnostics sharing.
-            </p>
+            <p class="screen-description">FAQ and contact options.</p>
         </div>
         <div class="screen-container">
-            <img src="19_Help.png" alt="Help & Support" class="screen-image">
+            <img src="19_Help.png" alt="Help" class="screen-image">
         </div>
     </section>
 
     <div class="section-divider"></div>
 
-    <!-- Screen 20: Subscription / Billing -->
     <section id="screen-20" class="screen-section">
         <div class="screen-header">
             <span class="screen-number">SCREEN 20</span>
-            <h2 class="screen-title">Subscription / Billing</h2>
-            <p class="screen-description">
-                Manage subscription plan, payment methods, and upgrade options with transparent pricing.
-            </p>
+            <h2 class="screen-title">Subscription</h2>
+            <p class="screen-description">Plan management and billing.</p>
         </div>
         <div class="screen-container">
-            <img src="20_Subscription_Billing.png" alt="Subscription Billing" class="screen-image">
+            <img src="20_Subscription_Billing.png" alt="Billing" class="screen-image">
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <img src="logo.png" alt="Dream Accountant Logo" class="footer-logo">
+        <img src="Locked_logo.png" alt="Dream Accountant" class="footer-logo">
         <p class="footer-text">© 2025 Dream Accountant. All rights reserved.</p>
         <p class="footer-tagline">Pay your dreams what they're worth.</p>
     </footer>
